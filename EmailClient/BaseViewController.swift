@@ -10,6 +10,9 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
