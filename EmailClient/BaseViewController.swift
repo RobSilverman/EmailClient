@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
     }
     
     func setupViews() {
-        searchBar.layer.cornerRadius = searchBar.frame.height / 2
+        searchBar.backgroundImage = UIImage()
         tableViewContainer.clipsToBounds = true
         tableViewContainer.layer.cornerRadius = 20.0
         if let searchText = searchBar.value(forKey: "searchField") as? UITextField {
