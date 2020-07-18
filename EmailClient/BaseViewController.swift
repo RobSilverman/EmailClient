@@ -9,6 +9,8 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    var emails = [Email]()
 
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var segmentedControl: UISegmentedControl!
@@ -16,7 +18,13 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadEmails()
         setupViews()
+    }
+    
+    func loadEmails() {
+        //TODO: add demo of pulling data from http request
+        //parse json here
     }
     
     func setupViews() {
@@ -26,6 +34,17 @@ class BaseViewController: UIViewController {
         if let searchText = searchBar.value(forKey: "searchField") as? UITextField {
             searchText.backgroundColor = UIColor(red: 0.44, green: 0.61, blue: 0.89, alpha: 1)
             searchText.textColor = UIColor.white
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "EmailSegue":
+            //configure
+            guard let vc = segue.destination as? EmailTableViewController else { return }
+            vc.setupViewController(emails)
+        default:
+            return
         }
     }
 

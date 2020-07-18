@@ -9,6 +9,12 @@
 import UIKit
 
 class EmailTableViewController: UITableViewController {
+    
+    var emails: [Email] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +27,10 @@ class EmailTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    func setupViewController(_ strings: [Email]) {
+        emails = strings
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

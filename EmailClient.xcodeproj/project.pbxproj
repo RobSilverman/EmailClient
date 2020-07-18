@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972EB9EF24C3A5EE0052CB5B /* emailData.json in Resources */ = {isa = PBXBuildFile; fileRef = 972EB9EE24C3A5EE0052CB5B /* emailData.json */; };
+		972EB9F124C3A6290052CB5B /* EmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EB9F024C3A6290052CB5B /* EmailData.swift */; };
 		97BED8E624BE47B90076E0D5 /* EmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BED8E524BE47B90076E0D5 /* EmailTableViewController.swift */; };
 		97C23E3424BA5D6A000D3291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C23E3324BA5D6A000D3291 /* AppDelegate.swift */; };
 		97C23E3624BA5D6A000D3291 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C23E3524BA5D6A000D3291 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		972EB9EE24C3A5EE0052CB5B /* emailData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emailData.json; sourceTree = "<group>"; };
+		972EB9F024C3A6290052CB5B /* EmailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailData.swift; sourceTree = "<group>"; };
 		97BED8E524BE47B90076E0D5 /* EmailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewController.swift; sourceTree = "<group>"; };
 		97C23E3024BA5D6A000D3291 /* EmailClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C23E3324BA5D6A000D3291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,9 +67,11 @@
 				97C23E3724BA5D6A000D3291 /* BaseViewController.swift */,
 				97BED8E524BE47B90076E0D5 /* EmailTableViewController.swift */,
 				97C23E3924BA5D6A000D3291 /* Main.storyboard */,
+				972EB9F024C3A6290052CB5B /* EmailData.swift */,
 				97C23E3C24BA5D6C000D3291 /* Assets.xcassets */,
 				97C23E3E24BA5D6C000D3291 /* LaunchScreen.storyboard */,
 				97C23E4124BA5D6C000D3291 /* Info.plist */,
+				972EB9EE24C3A5EE0052CB5B /* emailData.json */,
 			);
 			path = EmailClient;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972EB9EF24C3A5EE0052CB5B /* emailData.json in Resources */,
 				97C23E4024BA5D6C000D3291 /* LaunchScreen.storyboard in Resources */,
 				97C23E3D24BA5D6C000D3291 /* Assets.xcassets in Resources */,
 				97C23E3B24BA5D6A000D3291 /* Main.storyboard in Resources */,
@@ -142,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BED8E624BE47B90076E0D5 /* EmailTableViewController.swift in Sources */,
+				972EB9F124C3A6290052CB5B /* EmailData.swift in Sources */,
 				97C23E3824BA5D6A000D3291 /* BaseViewController.swift in Sources */,
 				97C23E3424BA5D6A000D3291 /* AppDelegate.swift in Sources */,
 				97C23E3624BA5D6A000D3291 /* SceneDelegate.swift in Sources */,

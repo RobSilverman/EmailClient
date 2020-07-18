@@ -37,7 +37,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V35-rV-Csa">
                                 <rect key="frame" x="0.0" y="181" width="414" height="715"/>
                                 <connections>
-                                    <segue destination="Hlz-0I-fmB" kind="embed" id="y8M-jY-rIL"/>
+                                    <segue destination="Hlz-0I-fmB" kind="embed" identifier="EmailSegue" id="y8M-jY-rIL"/>
                                 </connections>
                             </containerView>
                         </subviews>
