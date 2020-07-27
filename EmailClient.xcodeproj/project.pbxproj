@@ -16,6 +16,7 @@
 		97C23E3B24BA5D6A000D3291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C23E3924BA5D6A000D3291 /* Main.storyboard */; };
 		97C23E3D24BA5D6C000D3291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C23E3C24BA5D6C000D3291 /* Assets.xcassets */; };
 		97C23E4024BA5D6C000D3291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C23E3E24BA5D6C000D3291 /* LaunchScreen.storyboard */; };
+		97D482F124CF8D4300730380 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D482F024CF8D4300730380 /* EmailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		97C23E3C24BA5D6C000D3291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C23E3F24BA5D6C000D3291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C23E4124BA5D6C000D3291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D482F024CF8D4300730380 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				97BED8E524BE47B90076E0D5 /* EmailTableViewController.swift */,
 				97C23E3924BA5D6A000D3291 /* Main.storyboard */,
 				972EB9F024C3A6290052CB5B /* EmailData.swift */,
+				97D482F024CF8D4300730380 /* EmailCell.swift */,
 				97C23E3C24BA5D6C000D3291 /* Assets.xcassets */,
 				97C23E3E24BA5D6C000D3291 /* LaunchScreen.storyboard */,
 				97C23E4124BA5D6C000D3291 /* Info.plist */,
@@ -152,6 +155,7 @@
 				972EB9F124C3A6290052CB5B /* EmailData.swift in Sources */,
 				97C23E3824BA5D6A000D3291 /* BaseViewController.swift in Sources */,
 				97C23E3424BA5D6A000D3291 /* AppDelegate.swift in Sources */,
+				97D482F124CF8D4300730380 /* EmailCell.swift in Sources */,
 				97C23E3624BA5D6A000D3291 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,12 +18,6 @@ class EmailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -32,22 +26,29 @@ class EmailTableViewController: UITableViewController {
         emails = strings
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return emails.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "EmailCell", for: indexPath) as? EmailCell else { fatalError("Unable to deque cell") }
 
-        // Configure the cell...
-
+        cell.nameLabel.text = emails[indexPath.row].name
+        cell.subjectLabel.text = emails[indexPath.row].subject
+        cell.bodyLabel.text = emails[indexPath.row].body
+        
+        if emails[indexPath.row].read {
+            cell.nameLabel.font = .systemFont(ofSize: 17.0)
+            cell.subjectLabel.font = .systemFont(ofSize: 17.0)
+        }
+        
+        if emails[indexPath.row].starred {
+            cell.starredImage.image = UIImage(systemName: "star.fill")
+            cell.starredImage.backgroundColor = .systemYellow
+        }
+        
         return cell
     }
     
