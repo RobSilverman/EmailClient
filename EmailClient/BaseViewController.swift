@@ -27,6 +27,10 @@ class BaseViewController: UIViewController {
             searchText.backgroundColor = UIColor(red: 0.44, green: 0.61, blue: 0.89, alpha: 1)
             searchText.textColor = UIColor.white
         }
+        
+        segmentedControl.setImage(UIImage.textEmbededImage(image: UIImage(systemName: "tray.and.arrow.down")!, string: "Inbox", color: UIColor.white), forSegmentAt: 0)
+        segmentedControl.setImage(UIImage.textEmbededImage(image: UIImage(systemName: "person.2")!, string: "Social", color: UIColor.white), forSegmentAt: 1)
+        segmentedControl.setImage(UIImage.textEmbededImage(image: UIImage(systemName: "tag")!, string: "Promotions", color: UIColor.white), forSegmentAt: 2)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -28,10 +28,11 @@
                                 </scopeButtonTitles>
                             </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Sq-JE-Hlp">
-                                <rect key="frame" x="141.5" y="125" width="131" height="32"/>
+                                <rect key="frame" x="138" y="125" width="138.5" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="" image="tray.and.arrow.down" catalog="system"/>
+                                    <segment title="" image="person.2" catalog="system"/>
+                                    <segment title="" image="tag" catalog="system"/>
                                 </segments>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V35-rV-Csa">
@@ -74,4 +75,9 @@
             <point key="canvasLocation" x="940.57971014492762" y="137.61160714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="tag" catalog="system" width="128" height="116"/>
+        <image name="tray.and.arrow.down" catalog="system" width="128" height="109"/>
+    </resources>
 </document>
