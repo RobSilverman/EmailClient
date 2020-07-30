@@ -66,16 +66,16 @@
 		97C23E3224BA5D6A000D3291 /* EmailClient */ = {
 			isa = PBXGroup;
 			children = (
-				97C59D7824D32FDD00D495FE /* EmailTable.storyboard */,
 				97C23E3324BA5D6A000D3291 /* AppDelegate.swift */,
 				97C23E3524BA5D6A000D3291 /* SceneDelegate.swift */,
 				97C23E3724BA5D6A000D3291 /* BaseViewController.swift */,
 				97BED8E524BE47B90076E0D5 /* EmailTableViewController.swift */,
 				97C23E3924BA5D6A000D3291 /* Main.storyboard */,
+				97C59D7824D32FDD00D495FE /* EmailTable.storyboard */,
+				97C23E3E24BA5D6C000D3291 /* LaunchScreen.storyboard */,
 				972EB9F024C3A6290052CB5B /* EmailData.swift */,
 				97D482F024CF8D4300730380 /* EmailCell.swift */,
 				97C23E3C24BA5D6C000D3291 /* Assets.xcassets */,
-				97C23E3E24BA5D6C000D3291 /* LaunchScreen.storyboard */,
 				97C23E4124BA5D6C000D3291 /* Info.plist */,
 				972EB9EE24C3A5EE0052CB5B /* emailData.json */,
 			);

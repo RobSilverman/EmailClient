@@ -52,6 +52,7 @@ class EmailTableViewController: UITableViewController {
         cell.subjectLabel.text = emails[indexPath.row].subject
         cell.bodyLabel.text = emails[indexPath.row].body
         
+        
         if emails[indexPath.row].read {
             cell.nameLabel.font = .systemFont(ofSize: 17.0)
             cell.subjectLabel.font = .systemFont(ofSize: 17.0)
@@ -59,7 +60,7 @@ class EmailTableViewController: UITableViewController {
         
         if emails[indexPath.row].starred {
             cell.starredImage.image = UIImage(systemName: "star.fill")
-            cell.starredImage.backgroundColor = .systemYellow
+            cell.starredImage.tintColor = .systemYellow
         }
         
         return cell
