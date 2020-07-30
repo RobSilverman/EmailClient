@@ -9,8 +9,6 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    
-    var emails = [Email]()
 
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var segmentedControl: UISegmentedControl!
@@ -18,24 +16,7 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadEmails()
         setupViews()
-    }
-    
-    func loadEmails() {
-        //TODO: add demo of pulling data from http request
-        if let filePath = Bundle.main.path(forResource: "emailData", ofType: "json") {
-            let url = URL(fileURLWithPath: filePath)
-            do {
-                let json = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                if let emailData = try? decoder.decode(Emails.self, from: json) {
-                    emails = emailData.results
-                }
-            } catch {
-                print(error)
-            }
-        }
     }
     
     func setupViews() {
@@ -53,7 +34,6 @@ class BaseViewController: UIViewController {
         case "EmailSegue":
             //configure
             guard let vc = segue.destination as? EmailTableViewController else { return }
-            vc.setupViewController(emails)
         default:
             return
         }

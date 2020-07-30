@@ -18,12 +18,25 @@ class EmailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadEmails()
     }
 
     // MARK: - Table view data source
     
-    func setupViewController(_ strings: [Email]) {
-        emails = strings
+    func loadEmails() {
+        //TODO: add demo of pulling data from http request
+        if let filePath = Bundle.main.path(forResource: "emailData", ofType: "json") {
+            let url = URL(fileURLWithPath: filePath)
+            do {
+                let json = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                if let emailData = try? decoder.decode(Emails.self, from: json) {
+                    emails = emailData.results
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
