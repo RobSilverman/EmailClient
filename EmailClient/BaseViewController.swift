@@ -35,7 +35,7 @@ class BaseViewController: UIViewController {
         
         composeButton.layer.borderColor = UIColor.systemGray3.cgColor
         composeButton.layer.borderWidth = 1.0
-        composeButton.layer.cornerRadius = 20.0
+        composeButton.layer.cornerRadius = 25.0
         composeButton.layer.shadowColor = UIColor.black.cgColor
         composeButton.layer.shadowOpacity = 0.2
         composeButton.layer.shadowOffset = .zero
