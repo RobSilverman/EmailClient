@@ -66,6 +66,19 @@ class EmailTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let action = UIContextualAction(style: .normal, title: nil, handler: { action, view, completionHandler in
+            completionHandler(true)
+        })
+        
+        action.image = UIImage(systemName: "tray.full")
+        action.backgroundColor = UIColor.systemGreen
+        
+        let configuration = UISwipeActionsConfiguration(actions: [action])
+        return configuration
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

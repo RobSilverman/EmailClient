@@ -41,6 +41,18 @@
                                     <segue destination="rOl-Bz-yZl" kind="embed" identifier="EmailSegue" id="y8M-jY-rIL"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huS-AG-9jn">
+                                <rect key="frame" x="295" y="831" width="99" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7rU-1i-m65"/>
+                                    <constraint firstAttribute="width" constant="120" id="fU1-YI-E0i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="twn-6Z-4fX"/>
+                                </constraints>
+                                <state key="normal" title="Compose" image="square.and.pencil" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,13 +62,16 @@
                             <constraint firstItem="V35-rV-Csa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R9p-jk-pxt"/>
                             <constraint firstItem="hQ2-dQ-ros" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zwd-zj-nkM"/>
                             <constraint firstItem="0Sq-JE-Hlp" firstAttribute="top" secondItem="hQ2-dQ-ros" secondAttribute="bottom" constant="25" id="c7Z-4f-tBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="huS-AG-9jn" secondAttribute="bottom" constant="10" id="l8a-HL-h0O"/>
                             <constraint firstItem="V35-rV-Csa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sEU-VQ-XUM"/>
                             <constraint firstAttribute="bottom" secondItem="V35-rV-Csa" secondAttribute="bottom" id="ufT-2e-KgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huS-AG-9jn" secondAttribute="trailing" constant="20" id="wvl-q4-qpn"/>
                             <constraint firstItem="hQ2-dQ-ros" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zMr-Gd-t55"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="composeButton" destination="huS-AG-9jn" id="KwG-K3-hGb"/>
                         <outlet property="searchBar" destination="hQ2-dQ-ros" id="ZuT-yo-bRy"/>
                         <outlet property="segmentedControl" destination="0Sq-JE-Hlp" id="11K-nx-lhW"/>
                         <outlet property="tableViewContainer" destination="V35-rV-Csa" id="yG2-C3-VGm"/>
@@ -77,6 +92,7 @@
     </scenes>
     <resources>
         <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="tag" catalog="system" width="128" height="116"/>
         <image name="tray.and.arrow.down" catalog="system" width="128" height="109"/>
     </resources>
