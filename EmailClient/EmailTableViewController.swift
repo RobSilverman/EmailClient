@@ -47,6 +47,9 @@ class EmailTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EmailCell", for: indexPath) as? EmailCell else { fatalError("Unable to deque cell") }
+        
+        let dateString = calculateDisplayedDateTime(for: indexPath)
+        cell.timeLabel.text = dateString
 
         cell.nameLabel.text = emails[indexPath.row].name
         cell.subjectLabel.text = emails[indexPath.row].subject
@@ -77,6 +80,23 @@ class EmailTableViewController: UITableViewController {
         
         let configuration = UISwipeActionsConfiguration(actions: [action])
         return configuration
+    }
+    
+    func calculateDisplayedDateTime(for indexPath: IndexPath) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-dd-MM-HH:mm"
+        
+        let dateFromString = dateFormatter.date(from: emails[indexPath.row].date)
+        print(dateFromString)
+        
+        if dateFromString! > Date.init(timeIntervalSinceNow: -86400) {
+            dateFormatter.dateFormat = "dd MMM"
+        } else {
+            dateFormatter.dateFormat = "HH:mm"
+        }
+        
+        let dateString = dateFormatter.string(from: dateFromString!)
+        return dateString
     }
     
 

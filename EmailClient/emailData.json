@@ -4,7 +4,7 @@
 		"subject": "New Landing Page Design",
 		"body": "Hello,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nBest,\nJacques",
 		"image": "imagename",
-		"date": "2020-07-18-1147",
+		"date": "2020-07-18-11:47",
 		"attachment": null,
 		"starred": true,
 		"read": false
@@ -14,7 +14,7 @@
 		"subject": "New Project Ahead!",
 		"body": "Vestibulum at diam vestibulum, facilisis augue non, malesuada metus. Etiam accumsan consectetur efficitur. Proin convallis euismod libero id finibus. Donec porta rutrum fermentum. Nunc pulvinar gravida ligula, at sodales lorem aliquam non. Etiam molestie lacus eros, condimentum pellentesque turpis pretium et. Nullam tincidunt blandit quam. Etiam posuere mattis arcu et aliquet. Maecenas sit amet nunc eget odio congue tincidunt eget a nulla. Ut pharetra mollis rutrum. Duis non nibh sed augue molestie iaculis eget at velit. Phasellus eget malesuada libero.",
 		"image": "imagename",
-		"date": "2020-07-17-2037",
+		"date": "2020-07-17-20:37",
 		"attachment": null,
 		"starred": false,
 		"read": true
@@ -24,7 +24,7 @@
 		"subject": "Images for the Design!",
 		"body": "Aliquam felis urna, tempus vel aliquet iaculis, congue id est. Proin maximus maximus lorem ut auctor. Sed semper dolor ut bibendum semper. Suspendisse eget lectus nec dui dictum consequat. In nibh risus, facilisis sit amet lobortis nec, maximus placerat risus. Integer iaculis et elit eu eleifend. Nulla facilisi.",
 		"image": "imagename",
-		"date": "2020-07-17-1022",
+		"date": "2020-07-17-10:22",
 		"attachment": "IMG_5678.jpg",
 		"starred": true,
 		"read": false
@@ -34,7 +34,7 @@
 		"subject": "Data Server",
 		"body": "Integer a tempus erat, nec rutrum est. Ut placerat porta justo. Nam a sapien ultrices, posuere nunc vel, vehicula arcu. Mauris convallis, quam quis bibendum egestas, mauris nulla lacinia lectus, id mollis arcu purus vitae ante. Mauris vulputate gravida arcu et pharetra. Mauris volutpat sit amet dolor sed fermentum. In mollis, massa non posuere vestibulum, magna metus eleifend elit, ut sagittis nunc massa eu dui. Aenean imperdiet justo eu est iaculis, a fermentum enim porta. Quisque ut nibh vulputate, fringilla quam eget, facilisis quam. Proin nec leo sapien. Nunc tincidunt facilisis tempor. Sed nibh lacus, ultricies a rutrum sed, feugiat non ipsum. Nullam a felis sed nulla tincidunt congue id ut risus. Curabitur sollicitudin, nibh eu bibendum tempor, dui purus porta ligula, at aliquet massa velit vel ipsum. Aliquam ut cursus quam. Suspendisse congue sagittis leo, quis fermentum orci.",
 		"image": "imagename",
-		"date": "2020-07-17-0749",
+		"date": "2020-07-17-07:49",
 		"attachment": null,
 		"starred": false,
 		"read": false
@@ -44,7 +44,7 @@
 		"subject": "Client Meeting",
 		"body": "Maecenas eu mi sed nisi ultrices mollis. Aenean placerat ut ex eget aliquet. Proin volutpat lorem ante, vel ultrices sapien dapibus eget. Nulla dapibus dolor et lectus auctor, ut facilisis magna rhoncus. Pellentesque porttitor vehicula enim, ultrices volutpat leo tristique vel. Quisque tellus turpis, pretium ac libero et, cursus feugiat dolor. Mauris nunc nulla, vulputate fringilla velit a, feugiat facilisis risus. Cras gravida diam nec orci consequat, eget malesuada erat varius. Fusce mattis ante ac tincidunt lacinia. Proin eu nulla sit amet lacus tincidunt malesuada non non quam.",
 		"image": "imagename",
-		"date": "2020-07-16-2103",
+		"date": "2020-07-16-21:03",
 		"attachment": null,
 		"starred": false,
 		"read": true
@@ -54,7 +54,7 @@
 		"subject": "No Subject",
 		"body": "Nullam aliquam, ante vitae ultricies pharetra, lacus neque semper nisi, vel volutpat tortor magna quis sapien. Quisque mollis dapibus ligula. Curabitur vel aliquet nulla. Praesent non urna pellentesque, vehicula libero non, ultrices sapien. Maecenas ornare hendrerit arcu, sed iaculis quam lacinia congue. Aenean cursus ex eros, sit amet aliquam arcu tincidunt in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac placerat enim.",
 		"image": "imagename",
-		"date": "2020-07-16-1933",
+		"date": "2020-07-16-19:33",
 		"attachment": null,
 		"starred": false,
 		"read": true
