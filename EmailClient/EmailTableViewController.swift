@@ -84,12 +84,12 @@ class EmailTableViewController: UITableViewController {
     
     func calculateDisplayedDateTime(for indexPath: IndexPath) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-dd-MM-HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         
         let dateFromString = dateFormatter.date(from: emails[indexPath.row].date)
         print(dateFromString)
         
-        if dateFromString! > Date.init(timeIntervalSinceNow: -86400) {
+        if dateFromString! > Date.init(timeIntervalSinceNow: 86400) {
             dateFormatter.dateFormat = "dd MMM"
         } else {
             dateFormatter.dateFormat = "HH:mm"
